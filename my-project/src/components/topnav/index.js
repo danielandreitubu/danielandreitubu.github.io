@@ -2,46 +2,32 @@ const TopNav = () => {
     
     const navigation = [
         { name: 'Home', href: '#' },
-        { name: 'About', href: '#' },
-        { name: 'Adopt now!', href: '#' },
-        { name: 'Contact', href: '#' },
+        { name: 'About', href: '#about' },
+        { name: 'Skills', href: '#skills' },
+        { name: 'Mastery', href: '#mastery' },
+        { name: 'Contact', href: '#contact' }
+
       ]
 
     return(
-     <header className="bg-white">
-      <nav className="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
-        <div className="flex w-full items-center justify-between border-b border-indigo-500 py-6 lg:border-none">
+     <header className="bg-gray-800 sticky top-0 z-50">
+      <nav className="mx-auto max-w-7xl" aria-label="Top">
+        <div className="flex w-full items-center md:justify-between justify-center border-b border-gray-500 lg:border-none">
           <div className="flex items-center">
-            <a href="#">
-              <span className="sr-only">Your Company</span>
-              <img className="h-16 w-auto" src="/images/huhu.png" alt="" />
-            </a>
+          <img className="h-36 w-36" src="/images/daniel.png" alt=""/>
             <div className="ml-10 hidden space-x-8 lg:block">
               {navigation.map((link) => (
-                <a key={link.name} href={link.href} className="text-base font-medium text-black hover:text-indigo-50">
+                <a key={link.name} href={link.href} className="text-xl font-medium text-white hover:bg-blue-500 italic px-4 py-3 rounded-sm">
                   {link.name}
                 </a>
               ))}
             </div>
           </div>
-          <div className="ml-10 space-x-4">
-            <a
-              href="#"
-              className="inline-block rounded-md border bg-gray-900 text-white py-2 px-4 text-base font-medium text-white"
-            >
-              Sign in
-            </a>
-            <a
-              href="#"
-              className="inline-block rounded-md border border-transparent  py-2 px-4 text-base font-medium text-black hover:bg-indigo-50"
-            >
-              Sign up
-            </a>
-          </div>
+         
         </div>
         <div className="flex flex-wrap justify-center gap-x-6 py-4 lg:hidden">
           {navigation.map((link) => (
-            <a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-indigo-50">
+            <a key={link.name} href={link.href} className="text-xl font-medium text-white hover:bg-indigo-50">
               {link.name}
             </a>
           ))}
