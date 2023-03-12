@@ -10,7 +10,7 @@ const TopNav = () => {
       ]
 
     return(
-     <header className="bg-gray-800 sticky top-0 z-50">
+     <header className="bg-gray-800 md:sticky md:top-0 md:z-50 border-b border-gray-700">
       <nav className="mx-auto max-w-7xl" aria-label="Top">
         <div className="flex w-full items-center md:justify-between justify-center border-b border-gray-500 lg:border-none">
           <div className="flex items-center">

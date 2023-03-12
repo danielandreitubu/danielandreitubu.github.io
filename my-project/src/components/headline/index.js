@@ -49,9 +49,9 @@ const HeadLine = () => {
                       <div className="flex bg-gray-800/40 ring-1 ring-white/5">
                         <div className="-mb-px flex text-sm font-medium leading-6 text-gray-400">
                           <div className="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 py-2 px-4 text-white">
-                            daniel andrei tubu.
+                            daniel andrei tubu.js
                           </div>
-                          <div className="border-r border-gray-600/10 py-2 px-4">at your service.</div>
+                          <div className="border-r border-gray-600/10 py-2 px-4">at your service.css</div>
                         </div>
                       </div>
                       <div className="px-6 pt-6 pb-14 text-white text-xs">

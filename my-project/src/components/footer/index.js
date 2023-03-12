@@ -87,7 +87,7 @@ const Footer = () => {
                 </div>
               </div>
               <div class="flex md:justify-end justify-center mt-10 items-center">
-              <img className="h-36 w-36 rounded-full object-cover ring-8 ring-blue-500 mb-6" src="/images/me.jpg" alt=""/>
+              <img className="h-36 w-36 rounded-full object-top object-cover ring-4 ring-blue-500 mb-6" src="/images/mee.jpg" alt=""/>
               </div>
             </div>
           </footer>

@@ -31,7 +31,7 @@ const Mastery = () => {
               <div className="sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
                 <h2 className="text-5xl font-bold tracking-tight text-white mb-4">Mastery</h2>
               </div>
-        <p class="text-gray-500 text-2xl mb-10 mt-2">
+        <p class="text-gray-500 md:text-2xl text-lg mb-10 mt-2">
 One of the key characteristics of an expert is the ability to process information to make the best decision possible about the situation at hand.</p>
               <div className="mt-4 flow-root mb-20">
                 <div className="-my-2">
