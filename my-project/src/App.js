@@ -22,7 +22,7 @@ export default function App() {
       
       loading ?
       <ClimbingBoxLoader
-      color={"#f37A24"}
+      color={"#ffffff"}
       loading={loading}
       size={40}
       aria-label="Loading Spinner"
