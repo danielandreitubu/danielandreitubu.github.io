@@ -1,65 +1,54 @@
+import { HeartIcon, AcademicCapIcon, RocketLaunchIcon } from '@heroicons/react/20/solid'
+
 const Mastery = () => {
     
-    const categories = [
-        {
-          name: 'HTML',
-          href: '#',
-          imageSrc: '/images/html-logo.png',
-        },
-        {
-          name: 'REACT.JS',
-          href: '#',
-          imageSrc: '/images/react-logo.png',
-        },
-        {
-          name: 'TAILWINDCSS',
-          href: '#',
-          imageSrc: '/images/Tailwind_CSS_Logo.png',
-        },
-        {
-          name: 'GIT',
-          href: '#',
-          imageSrc: '/images/git_icon.png',
-        },
-        { name: 'MAIZZLE', href: '#', imageSrc: '/images/maizzle.png' },
-
+    const features = [
+      {
+        name: 'Health and fitness.',
+        description:
+          'The most significant value you need to protect is your health. As long as we can work on an issue, we can prepare for practically any situation.',
+        icon: HeartIcon,
+      },
+      {
+        name: 'Self-development.',
+        description: 'Enhancing strengths, enhancing mental health, and even mending relationships are all benefits of self-improvement. Simple actions like reading a book, meditating, o getting up early are some ways to improve oneself.',
+        icon: AcademicCapIcon,
+      },
+      {
+        name: 'Gaming.',
+        description: 'We can use our imaginations, discover our hobbies, and develop our talents in a variety of ways when we have time to play by ourselves. Play ultimately promotes new ways of thinking and boosts self-esteem.',
+        icon: RocketLaunchIcon,
+      },
       ]
       
         return (
-          <div className="bg-gray-800" id="mastery">
-            <div className="py-16 sm:py-24 xl:mx-auto xl:max-w-7xl xl:px-8 px-6">
-              <div className="sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8 xl:px-0">
-                <h2 className="text-5xl font-bold tracking-tight text-white mb-4">Mastery</h2>
-              </div>
-        <p class="text-gray-500 md:text-2xl text-lg mb-10 mt-2">
-One of the key characteristics of an expert is the ability to process information to make the best decision possible about the situation at hand.</p>
-              <div className="mt-4 flow-root mb-20">
-                <div className="-my-2">
-                  <div className="relative box-content h-80 overflow-x-auto py-2 xl:overflow-visible mb-36">
-                    <div className="min-w-screen-xl absolute flex space-x-8 px-4 sm:px-6 lg:px-8 xl:relative xl:grid xl:grid-cols-5 xl:gap-x-8 xl:space-x-0 xl:px-0">
-                      {categories.map((category) => (
-                        <a
-                          key={category.name}
-                          href={category.href}
-                          className="relative flex h-80 w-56 flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
-                        >
-                          <span aria-hidden="true" className="absolute inset-0">
-                            <img src={category.imageSrc} alt="" className="h-full w-full object-cover object-center" />
-                          </span>
-                          <span
-                            aria-hidden="true"
-                            className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
-                          />
-                          <span className="relative mt-auto text-center text-xl font-bold text-white">{category.name}</span>
-                        </a>
-                      ))}
-                    </div>
+          <div className="overflow-hidden bg-gray-800 py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-28">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+          <div className="lg:ml-auto lg:pt-4 lg:pl-4">
+            <div className="lg:max-w-lg">
+              <h2 className="text-base font-semibold leading-7 text-blue-500">A list of the interests I have</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-50 sm:text-6xl">About Me
+</p>
+              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                {features.map((feature) => (
+                  <div key={feature.name} className="relative pl-9">
+                    <dt className="inline font-semibold text-gray-200">
+                      <feature.icon className="absolute top-1 left-1 h-5 w-5 text-gray-50" aria-hidden="true" />
+                      {feature.name}
+                    </dt>{' '}
+                    <dd className="inline text-gray-400">{feature.description}</dd>
                   </div>
-                </div>
-              </div>
-      
+                ))}
+              </dl>
             </div>
           </div>
+          <div className="flex items-center justify-end lg:order-first">
+          <iframe src="https://embed.lottiefiles.com/animation/33502" width={632} height={542}></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
         )
       }
   

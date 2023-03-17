@@ -5,34 +5,56 @@ import About from "./components/about"
 import Skills from "./components/skills"
 import Footer from "./components/footer"
 import Mastery from "./components/mastery"
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import RingLoader from "react-spinners/RingLoader";
 
-export default function App() {
+const App = () => {
   const [loading, setLoading] = useState(false);
+  const [data,setData] = useState()
 
   useEffect(() => {
+   handleLoading()
+  }, [])
+
+  const handleLoading = async() => {
+
+    // const resp = await fetch('https://api.sampleapis.com/beers/');
+    // const json = await resp.json();
+
+
+    // if(json){
+    //   setData(json)
+    // }
+
+    // console.log(data)
     setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 5000)
-  }, [])
+  }
+  
+
   return (
     <div className="App">
       {
       
       loading ?
-      <ClimbingBoxLoader
+      <div className="w-full h-screen flex items-center justify-center">
+      <RingLoader
       color={"#ffffff"}
       loading={loading}
-      size={40}
+      size={300}
       aria-label="Loading Spinner"
       data-testid="loader"
+      cssOverride={{}}
     />
+    </div>
       :
     
-      <><TopNav /><HeadLine /><About /><Skills /><Mastery /><Footer />
+      <><TopNav /><HeadLine /><Mastery /><About /><Skills /><Footer />
       </>
       }
     </div>
   )
 }
+
+export default App

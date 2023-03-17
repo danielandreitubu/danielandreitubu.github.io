@@ -14,7 +14,7 @@ const TopNav = () => {
       <nav className="mx-auto max-w-7xl" aria-label="Top">
         <div className="flex w-full items-center md:justify-between justify-center border-b border-gray-500 lg:border-none">
           <div className="flex items-center">
-          <img className="h-36 w-36" src="/images/daniel.png" alt=""/>
+          <img className="h-28 w-28" src="/images/daniel.png" alt=""/>
             <div className="ml-10 hidden space-x-8 lg:block">
               {navigation.map((link) => (
                 <a key={link.name} href={link.href} className="text-xl font-medium text-white hover:bg-blue-500 italic px-4 py-3 rounded-sm">
