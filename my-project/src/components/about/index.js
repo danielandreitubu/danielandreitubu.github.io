@@ -28,7 +28,7 @@ const About = () => {
   ]
 
   return (
-    <div className="bg-gray-800 shadow mx-auto max-w-8xl py-12 px-6 lg:py-16 lg:px-14">
+    <div className="bg-gray-800 shadow mx-auto max-w-8xl py-12 px-6 lg:py-16 lg:px-14" id="mastery">
       <h2 className="text-3xl font-medium tracking-tight text-white sm:text-6xl mb-10">
                    Education
                   </h2>
@@ -43,7 +43,7 @@ const About = () => {
                   </div>
                   <div className="min-w-0 flex-1 px-4 md:grid md:grid-cols-2 md:gap-4">
                     <div className='w-full'>
-                      <p className="md:text-3xl text-xl font-medium text-white">{application.applicant.name}</p>
+                      <p className="md:text-3xl text-xl font-medium text-white truncate">{application.applicant.name}</p>
                       <p className="mt-2 flex items-center md:text-xl text-lg text-gray-500">
                         <span className="truncate">{application.applicant.email}</span>
                       </p>

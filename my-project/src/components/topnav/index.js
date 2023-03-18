@@ -4,7 +4,7 @@ const TopNav = () => {
         { name: 'Home', href: '#' },
         { name: 'About', href: '#about' },
         { name: 'Skills', href: '#skills' },
-        { name: 'Mastery', href: '#mastery' },
+        { name: 'Education', href: '#mastery' },
         { name: 'Contact', href: '#contact' }
 
       ]
