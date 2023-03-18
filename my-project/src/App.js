@@ -5,7 +5,7 @@ import About from "./components/about"
 import Skills from "./components/skills"
 import Footer from "./components/footer"
 import Mastery from "./components/mastery"
-import RingLoader from "react-spinners/RingLoader";
+import HashLoader from "react-spinners/HashLoader";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -39,7 +39,7 @@ const App = () => {
       
       loading ?
       <div className="w-full h-screen flex items-center justify-center">
-      <RingLoader
+      <HashLoader
       color={"#ffffff"}
       loading={loading}
       size={300}
@@ -47,6 +47,7 @@ const App = () => {
       data-testid="loader"
       cssOverride={{}}
     />
+
     </div>
       :
     
