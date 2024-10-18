@@ -9,13 +9,13 @@ const HeadLine = () => {
           <div className="px-6 lg:px-0 lg:pt-4">
             <div className="mx-auto max-w-2xl">
               <div className="max-w-lg">
-              
-               
+
+
                 <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
                   Hi! 👋 My name is Daniel Andrei Tubu
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-400">
-                As a dedicated frontend developer, I take pleasure in carrying out software engineering tasks and solving problems. My areas of interest are web development and software engineering.
+                As a DevOps Engineer specializing in automating CI/CD pipelines, infrastructure as code, and enhancing collaboration between development and operations for faster, more reliable software delivery.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a

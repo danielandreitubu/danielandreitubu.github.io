@@ -8,7 +8,6 @@ const About = () => {
       },
       date: "2020-01-07",
       dateFull: "2018 - 2022",
-      href: "#",
     },
     {
       applicant: {
@@ -18,7 +17,6 @@ const About = () => {
       },
       date: "2020-01-07",
       dateFull: "2016 - 2018",
-      href: "#",
     },
   ];
 
@@ -30,7 +28,7 @@ const About = () => {
       <h2 className="text-3xl font-medium tracking-tight text-white sm:text-6xl mb-10">
         Education
       </h2>
-      <ul role="list" className="divide-y divide-gray-200">
+      <ul role="list" className="divide-y divide-gray-200 mb-36">
         {applications.map((application) => (
           <li key={application.applicant.email}>
             <a href={application.href} className="block hover:bg-gray-700">
